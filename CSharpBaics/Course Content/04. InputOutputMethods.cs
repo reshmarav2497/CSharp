@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBaics.Basics
+namespace CSharpBasics.Course_Content
 {
-    internal class InputOutput
+    public class InputOutputMethods
     {
-        public void InputOutputDemo()
+        void inputOutputMethods_Main()
         {
             // Write Line Method
             Console.WriteLine("Hello, World!");

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBaics.Basics
+namespace CSharpBasics.Course_Content
 {
-    internal class Loops
+    public class Loops
     {
-        public void LoopsDemo()
+        void loops_Main()
         {
             // Loops
 
@@ -93,6 +93,5 @@ namespace CSharpBaics.Basics
                 Console.WriteLine(i);
             }
         }
-    }
     }
 }

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBaics.Basics
+namespace CSharpBasics.Course_Content
 {
-    internal class OperatorsExpressions
+    public class OperatorsAndExpressions
     {
-        public void OperatorsExpressionsDemo()
+        void operatorsAndExpressions_Main()
         {
             // Operators & Expressions
 

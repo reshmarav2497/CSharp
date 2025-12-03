@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBaics.Basics
+namespace CSharpBasics.Course_Content
 {
-    internal class ConditionalStatements
+    public class ConditionalStatements
     {
-        public void ConditionalStatementsDemo()
+        void conditionalStatements_Main()
         {
             // Conditional Statements
 
@@ -78,25 +78,6 @@ namespace CSharpBaics.Basics
                     Console.WriteLine("Fail");
                     break;
             }
-
-            //modern switch expression --> only in C# 8.0 and later
-            //int month = 4;
-            //string monthName = month switch
-            //{
-            //    1 => "January",
-            //    2 => "February",
-            //    3 => "March",
-            //    4 => "April",
-            //    5 => "May",
-            //    6 => "June",
-            //    7 => "July",
-            //    8 => "August",
-            //    9 => "September",
-            //    10 => "October",
-            //    11 => "November",
-            //    12 => "December",
-            //    0 => "Invalid Month"
-            //};
 
             // Ternary Operator 
             int age = 20;

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpBaics.Basics
+namespace CSharpBasics.Course_Content
 {
-    internal class Methods_Parameters
+    public class Methods
     {
-        public void MethodsParametersDemo()
+        void methods_Main()
         {
             // Methods
 
@@ -128,6 +128,7 @@ namespace CSharpBaics.Basics
             );
         }
 
+        // Method Overloading
         static int AddValue(int a, int b)
         {
             return a + b;
