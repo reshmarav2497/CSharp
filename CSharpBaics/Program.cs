@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using CSharpBasics.Course_Content;
 
 namespace ConsoleApp1
 {
@@ -11,6 +12,8 @@ namespace ConsoleApp1
             Console.Write("C# Basics");
             Console.WriteLine("");
             Console.ReadKey();
+
+            Strings.StringOperations();
 
         }
     }

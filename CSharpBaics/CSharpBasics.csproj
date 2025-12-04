@@ -58,6 +58,9 @@
     <Compile Include="Course Content\11. ObjectOrientedProgramming.cs" />
     <Compile Include="Course Content\03. OperatorsAndExpressions.cs" />
     <Compile Include="Course Content\16. BestPractices.cs" />
+    <Compile Include="Course Content\MathOperation.cs" />
+    <Compile Include="Course Content\RandomNums.cs" />
+    <Compile Include="Course Content\Strings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projects\1. CalculatorApp.cs" />
     <Compile Include="Projects\2. BankAccountApp.cs" />
