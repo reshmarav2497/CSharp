@@ -8,7 +8,7 @@ namespace CSharpBasics.Course_Content
 {
     public class InputOutputMethods
     {
-        void inputOutputMethods_Main()
+        public void inputOutputMethods_Main()
         {
             // Write Line Method
             Console.WriteLine("Hello, World!");

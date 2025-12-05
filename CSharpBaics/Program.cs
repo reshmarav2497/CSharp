@@ -10,10 +10,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.Write("C# Basics");
-            Console.WriteLine("");
-            Console.ReadKey();
-
-            Strings.StringOperations();
 
         }
     }
