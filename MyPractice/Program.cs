@@ -1,4 +1,6 @@
 ﻿using MyPractice;
+using MyPractice.Encapsulation;
+using MyPractice.EventsAndDelegates;
 using MyPractice.Methods;
 
 var customer = new Customer(1, "Max");
@@ -20,6 +22,34 @@ UsePoints();
 Console.WriteLine("--------params-----------");
 
 UseParams();
+
+Console.WriteLine("--------out-modifier-----------");
+UseOutMod();
+
+Console.WriteLine("--------Encapsulation-----------");
+var p1 = new Person();
+p1.SetBirthDate(new DateTime(1999, 8, 15));
+
+Console.WriteLine("Birthday -> " + p1.GetBirthDate());
+
+
+Console.WriteLine("--------Events and Delegates -----------");
+
+var video = new Video() { Title = "Video1" };
+
+var videoEncoder = new VideoEncoder(); //Publisher
+
+var mailService = new MailService(); //Subscriber
+
+var messageService = new MessageService(); //new Subscriber
+
+videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+
+videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
+
+
+videoEncoder.Encode(video);
+
 return;
 
 static void UsePoints()
@@ -48,8 +78,7 @@ static void UseParams()
 
 static void UseOutMod()
 {
-    int num;
-    bool isParsed = int.TryParse("abc", out num);
+    bool isParsed = int.TryParse("abc", out int num);
     if (isParsed)
     {
         Console.WriteLine(num);
