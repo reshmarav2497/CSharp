@@ -1,7 +1,10 @@
 ﻿using MyPractice;
+using MyPractice.Coupling;
 using MyPractice.Encapsulation;
 using MyPractice.EventsAndDelegates;
 using MyPractice.Methods;
+using Order = MyPractice.Order;
+using OrderService = MyPractice.Coupling.Order;
 
 var customer = new Customer(1, "Max");
 
@@ -49,6 +52,12 @@ videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
 
 videoEncoder.Encode(video);
+
+
+Console.WriteLine("Placing Order");
+
+OrderService orderService = new OrderService(new SmsService());
+orderService.PlaceOrder();
 
 return;
 
